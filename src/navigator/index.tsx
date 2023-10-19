@@ -3,14 +3,14 @@ import { SafeAreaView } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import {
   NavigationContainer,
-  useNavigationContainerRef,
+  useNavigationContainerRef
 } from '@react-navigation/native';
-import { Main } from '@screens/main.screen';
+import { HomeScreen } from '@screens/home/home.screen';
 import { useFlipper } from '@react-navigation/devtools';
-import { ApplicationStackParamList } from '@models/navigation.model';
+import { IApplicationStackParamList } from '@models/navigation.model';
 import { GLOBAL_STYLE } from '@constants/styles.constant';
 
-const Stack = createStackNavigator<ApplicationStackParamList>();
+const Stack = createStackNavigator<IApplicationStackParamList>();
 
 // @refresh reset
 const ApplicationNavigator = () => {
@@ -23,7 +23,7 @@ const ApplicationNavigator = () => {
     <SafeAreaView style={GLOBAL_STYLE.fill}>
       <NavigationContainer ref={navigationRef}>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Main" component={Main} />
+          <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

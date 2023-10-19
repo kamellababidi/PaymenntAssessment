@@ -5,17 +5,14 @@
       "baseUrl": "./src",
       "paths": {
         "@assets/*": ["assets/*"],
-        "@images/*": ["assets/images/*"],
         "@components/*": ["components/*"],
         "@enums/*": ["enums/*"],
         "@models/*": ["models/*"],
-        "@sagas": ["sagas"],
         "@screens/*": ["screens/*"],
         "@navigator/*": ["navigator/*"],
         "@constants/*": ["constants/*"],
-        "@store": ["store"],
-        "@uikit": ["uikit"],
-        "@utils": ["utils"]
+        "@utils": ["utils"],
+        "@hooks": ["hooks"]
       }
     }
   }
