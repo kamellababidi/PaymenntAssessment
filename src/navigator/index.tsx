@@ -5,7 +5,6 @@ import {
   NavigationContainer,
   useNavigationContainerRef
 } from '@react-navigation/native';
-import { useFlipper } from '@react-navigation/devtools';
 
 import { HomeScreen } from '@screens/home/home.screen';
 import { FirstDetailsScreen } from '@screens/first-details/first-details.screen';
@@ -18,12 +17,9 @@ import { GLOBAL_STYLE } from '@constants/styles.constant';
 
 const Stack = createStackNavigator<IApplicationStackParamList>();
 
-// @refresh reset
 const ApplicationNavigator = () => {
 
   const navigationRef = useNavigationContainerRef();
-
-  useFlipper(navigationRef);
 
   return (
     <SafeAreaView style={GLOBAL_STYLE.safeArea}>

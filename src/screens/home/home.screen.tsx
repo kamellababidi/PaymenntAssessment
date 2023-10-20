@@ -112,7 +112,7 @@ export const HomeScreen = ({ navigation }: Props) => {
         }}
         ListFooterComponent={renderTransactionsListFooterComponent}
         keyExtractor={extractKey}
-        estimatedItemSize={59} />
+        estimatedItemSize={100} />
     </View>
   );
   // ------------------------------------------------------------------------------------------
